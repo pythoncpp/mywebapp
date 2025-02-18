@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mywebapp
-          image: pythoncpp/mywebapp:latest
+          image: pythoncpp/mywebapp:3
           ports:
             - containerPort: 80
 ---
