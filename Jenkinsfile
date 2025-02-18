@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "init environment"
                 sh 'export PATH=$PATH:/usr/bin'
-                sh 'docker image build pythoncpp/mywebapp:$BUILD_NUMBER .'
+                sh 'docker image build -t pythoncpp/mywebapp:$BUILD_NUMBER .'
             }
         }
         stage('push the docker image to docker hub') {
